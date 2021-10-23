@@ -14,13 +14,14 @@
     const nav = document.getElementById('nav')
     const menuMobile =document.getElementById('menu-mobile')
     var hash;
+    viewSelect()
+
 
     menuMobile.addEventListener('click',function(){   // Menu-Mobile
       nav.classList.toggle('nav-visible')
     })
 
     window.addEventListener('resize', viewSelect)   // Event Resize Window
-    window.addEventListener('load', viewSelect)          // Event Open Window
     
     function viewSelect(){     
       if(window.innerWidth<675){
