@@ -57,7 +57,7 @@ nav a:hover{
 }
 
 
-/*-------------MAIN------------*/
+/*---------------------------------MAIN---------------------------------*/
 
 #mainContainer{
     display: flex;
@@ -160,16 +160,6 @@ nav a:hover{
     color:hsl(176, 72%, 28%);
     font-weight: 900;
 }
-
-
-
-
-
-
-
-
-
-
 
 #triContainer{
     display: flex;
@@ -287,7 +277,7 @@ nav a:hover{
 }
 
 
-/*---------------- Modal Thanks --------------*/
+/*------------------------------ Modal Thanks --------------------------*/
 
 #modalThanks{
     visibility: hidden;
@@ -309,7 +299,7 @@ nav a:hover{
 #thContainer{
     width: 33%;
     min-width: 300px;
-    background-color: blanchedalmond;
+    background-color: white
     padding: 2em;
     border-radius: 0.5em;
 }
@@ -360,7 +350,7 @@ nav a:hover{
 
 
 
-/*------------------------------Modaldefault---------------------------------*/
+/*------------------------------Modaldefault----------------------------*/
 
 .modalDefault{
     position: absolute;
@@ -411,10 +401,6 @@ nav a:hover{
 .modalDefaultDivActive{
     border: 2px solid hsl(176, 50%, 47%);
 }
-
-
-
-
 
 .modalDefaultDiv label{
     font-size: 1em;
@@ -554,7 +540,6 @@ nav a:hover{
     #buttonBook{
         padding: 0 1em;
         background-color: transparent;
-
     }
 
     #triContainer{
@@ -565,7 +550,6 @@ nav a:hover{
         margin: 0;
     }
 
-    
     .triContainerBoxes{
         padding:2em 0;
     }
