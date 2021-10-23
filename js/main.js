@@ -19,14 +19,16 @@
       nav.classList.toggle('nav-visible')
     })
 
-    window.addEventListener('resize', function(){     // Event Resize Window
+    window.addEventListener('resize', viewSelect)   // Event Resize Window
+    window.addEventListener('load', viewSelect)          // Event Open Window
+    
+    function viewSelect(){     
       if(window.innerWidth<675){
         imgFondo.src = 'images/image-hero-mobile.jpg'
       }else{
         imgFondo.src = 'images/image-hero-desktop.jpg'
       }
-      document.getElementById('mih1').innerHTML = window.innerWidth
-    })
+    }
 
     bookMark.addEventListener('click', function () {      // Enabled/Dis Bookmark
       iconBook.classList.toggle('enabledBook')
