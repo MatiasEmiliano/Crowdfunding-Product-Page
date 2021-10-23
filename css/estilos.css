@@ -1,0 +1,707 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-family: 'Commissioner', sans-serif;
+}
+
+header{
+    position: relative;
+}
+
+#fondoHeader{
+    width: 100%;
+}
+
+#menu-mobile{
+    display: none;
+    position: absolute;
+    top: 30px;
+    right:12%;
+    color: white;
+}
+
+#logo{
+    position: absolute;
+    top: 30px;
+    left: 12%;
+}
+
+nav{
+    position: absolute;
+    top: 30px;
+    right: 10%;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    display: inline;
+    margin: 0 1em;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Commissioner', sans-serif;
+    color:white
+}
+
+nav a:hover{
+    color: peru;
+}
+
+
+/*-------------MAIN------------*/
+
+#mainContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:-100px;
+    margin: 0 auto;
+    width: 53%;
+    min-width: 600px;
+    background-color: white;
+    border-radius: 0.5em;
+}
+
+#logom{
+    position: relative;
+    top:-35px
+}
+
+#firstContainer{
+    border: 1px solid hsl(0, 2%, 89%);
+    border-radius: 0.5em;
+    margin: 0 0 0.5em 0;
+}
+
+#firstContainer > h1{
+    font-size: 2em;
+    font-weight: 800;
+    text-align: center;
+}
+
+#firstContainer p{
+    text-align: center;
+    font-size: 1.2em;
+    color: hsl(0, 0%, 48%);
+    margin: 1em 0;
+}
+
+#logoContainer{
+  text-align: center;
+}
+
+#buttonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:3em 0;
+    padding: 0 2em;
+}
+
+
+#buttonBack{
+    font-family: 'Commissioner';
+    border:none;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 2em;
+    padding: 1.2em 3em;
+    color: white;
+    background-color:hsl(176, 50%, 47%);
+    cursor: pointer;
+}
+
+#buttonBook{
+    font-family: 'Commissioner';
+    border: none;
+    font-weight: 700;
+    position: relative;
+    border-radius: 2em;
+    padding: 1.3em 3.8em;
+    cursor: pointer;
+}
+
+#buttonBack:hover{
+    background-color:hsl(176, 72%, 28%);
+}
+
+#buttonBook:hover{
+    color:hsl(176, 72%, 28%);
+}
+
+#buttonBook span{
+    position: absolute;
+    left:-13px;
+    top:-3px;
+    color: white;
+    border-radius: 5em;
+    padding: 0.7em;
+}
+
+.disabledBook{
+    background-color: hsl(0, 0%, 48%);
+}
+
+.enabledBook{
+    background-color:hsl(176, 72%, 28%);
+}
+
+.enabledBookButton{
+    color:hsl(176, 72%, 28%);
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+#triContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.triContainerBoxes{
+    font-family:'Commissioner';
+    width: 33.33%;
+    padding-left: 1em;
+}
+
+.triContainerBoxes:nth-child(2){
+    border-left: 1px solid hsl(0, 2%, 89%);
+    border-right: 1px solid hsl(0, 2%, 89%);
+}
+
+.triContainerBoxes h1{
+    text-align: left;
+    font-weight:800;
+    font-size: 2em;
+}
+
+.triContainerBoxes h2{
+    text-align: left;
+    font-size: 1em; 
+    color:hsl(0, 0%, 48%);
+}
+
+#barra{
+    width: 96%;
+    height: 15px;
+    border: 1px solid hsl(0, 2%, 89%);
+    border-radius: 5em;
+    margin: 1.5em auto;
+}
+
+#contenidoBarra{
+    width: 20%;
+    background-color:  hsl(176, 50%, 47%) ;
+    height: 100%;
+    border-radius: 5em;
+}
+
+.restContainer{
+    border: 1px solid hsl(0, 2%, 89%);
+    padding: 2em;
+    margin: 0.5em 0 0.5em 0;
+    border-radius: 0.5em;
+}
+
+.restContainer h1{
+    font-size: 1.2em;
+    display:inline;
+}
+
+.restContainer h2{
+    font-size:1.2em;
+    color: hsl(176, 50%, 47%);
+    font-weight: 900;
+    display:inline;
+    float:right;
+}
+
+.restContainer p{
+    font-size: 1em;
+    color:hsl(0, 0%, 48%);
+    line-height: 1.8em;
+    margin: 1.5em 0 1.5em;
+}
+
+.restContainer h3{
+    font-size: 2em;
+    display: inline;
+}
+
+.restContainer button{
+    font-family: 'Commissioner';
+    border:none;
+    float:right;
+    text-decoration:none;
+    background-color:hsl(176, 50%, 47%);
+    color:white;
+    padding: 1em 2em;
+    border-radius: 3em;
+    cursor: pointer;
+}
+
+.restContainer button:hover{
+    background-color: hsl(176, 72%, 28%);
+}
+
+
+.restContainer h3 span{
+    font-size:0.5em;
+    color:hsl(0, 0%, 48%);
+}
+
+.restContainer:last-of-type h1{
+    color: hsl(0, 0%, 48%);
+}
+
+.restContainer:last-of-type h2{
+    color: hsl(0, 0%, 48%);
+}
+
+.restContainer:last-of-type h3{
+    color: hsl(0, 0%, 48%);
+}
+
+.restContainer:last-of-type button{
+    background-color: hsl(0, 0%, 48%);
+    pointer-events: none;
+}
+
+
+/*---------------- Modal Thanks --------------*/
+
+#modalThanks{
+    visibility: hidden;
+}
+
+.modal{
+    position:fixed;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    top: 0;
+    left: 0;
+}
+
+#thContainer{
+    width: 33%;
+    min-width: 300px;
+    background-color: blanchedalmond;
+    padding: 2em;
+    border-radius: 0.5em;
+}
+
+#thContainer img{
+    display: block;
+    margin: 0 auto;
+}
+
+#thContainer h1{
+    font-family:'Commissioner';
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0.5em;
+}
+
+#thContainer p{
+    font-family: 'Commissioner';
+    font-size: 1em;
+    color:hsl(0, 0%, 48%);
+    line-height: 1.8em;
+    text-align: center;
+    margin: 1em;
+}
+
+#thContainer button{
+    border: none;
+    width: 100px;
+    color: white;
+    background-color:hsl(176, 72%, 28%);
+    font-family: 'Commissioner';
+    font-weight: 700;
+    border-radius: 2em;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    margin:0 auto;
+}
+
+.modalHide{
+    visibility: hidden;
+}
+
+.modalshow{
+    visibility: visible;
+}
+
+
+
+/*------------------------------Modaldefault---------------------------------*/
+
+.modalDefault{
+    position: absolute;
+    min-height: 100%;
+    visibility: hidden;
+}
+
+
+#modalDefaultContainer{
+    max-width: 800px;
+    min-width: 500px;
+    background-color: white;
+    position: absolute;
+    padding: 3em;
+    border-radius: 1em;
+    top:25vh;
+    margin: 1em;
+}
+
+#modalDefaultContainer > img{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#modalDefaultContainer > img:hover{
+    cursor: pointer;
+}
+
+#modalDefaultContainer > h1{
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+#modalDefaultContainer > p{
+    margin: 1.5em 0;
+}
+
+
+.modalDefaultDiv{
+    border: 1px solid hsl(0, 1%, 83%);
+    margin: 2em 0;
+    border-radius: 1em;
+    padding: 2em 1em 2em 3em;
+    position: relative;
+}
+
+.modalDefaultDivActive{
+    border: 2px solid hsl(176, 50%, 47%);
+}
+
+
+
+
+
+.modalDefaultDiv label{
+    font-size: 1em;
+    font-weight: 800;
+}
+
+.modalDefaultDiv > input{
+    position:absolute;
+    top: 30px;
+    left: 13px;
+    height: 25px;
+    width: 25px;
+}
+
+.modalDefaultDiv > label:hover{
+    color: hsl(176, 50%, 47%);
+}
+
+.modalDefaultDiv h1{
+    font-size: 1em;
+    color: hsl(176, 50%, 47%);
+    display: inline;
+    padding-left: 1em;
+}
+
+.modalDefaultDiv p{
+    font-size: 1em;
+    color:hsl(0, 0%, 48%);
+    line-height: 1.8em;
+    margin: 1em 0;
+}
+
+.modalDefaultDiv h2{
+    font-size: 1em;
+    color:hsl(0, 0%, 48%);
+    float: right;
+    font-weight: normal;
+}
+
+.modalDefaultDiv h2 span{
+    font-size: 1.2em;
+    color: black;
+    font-weight: bolder;
+}
+
+.bottomDefaultDiv{
+    display: none;
+    border-top: 1px solid hsl(0, 1%, 83%);
+}
+
+.bottomDefaultDiv p{
+    display: inline;
+    margin: 0 1em;
+}
+
+.modalDefaultDivActive .bottomDefaultDivActive{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.bottomDefaultDiv input{
+    color: black;
+    font-family: 'Commissioner';
+    border-radius: 2em;
+    border: 1px solid hsl(0, 1%, 83%);
+    padding: 1em 2em;
+    margin: 0 1em;
+    width: 100px;
+}
+
+.bottomDefaultDiv input:focus{
+    border: 2px solid hsl(176, 72%, 28%);
+    outline: none;
+}
+
+.bottomDefaultDiv button{
+    border: none;
+    background-color: hsl(176, 72%, 28%);
+    color: white;
+    font-family: 'Commissioner';
+    border-radius: 2em;
+    padding: 1em 2em;
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+
+.Zeroleft button{
+   background-color: hsl(0, 0%, 48%);
+   pointer-events: none;
+}
+
+.Zeroleft h1, .Zeroleft label, .Zeroleft input{
+    color: hsl(0, 0%, 48%);
+    pointer-events: none;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 2em;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media screen and (max-width:675px){
+
+    #mainContainer{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top:-100px;
+        margin: 0 auto;
+        width: 90%;
+        min-width: 250px;
+        background-color: white;
+        border-radius: 0.5em;
+    }
+
+    #buttonContainer{
+        justify-content: center;
+    }
+
+    #buttonBook div{
+        display: none;
+    }
+    #buttonBook span{
+        position: sticky;
+    }
+    #buttonBook{
+        padding: 0 1em;
+        background-color: transparent;
+
+    }
+
+    #triContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5em;
+        margin: 0;
+    }
+
+    
+    .triContainerBoxes{
+        padding:2em 0;
+    }
+
+    .triContainerBoxes h1, .triContainerBoxes h2{
+        text-align: center; 
+    }
+
+    #barra{
+        height: 25px;
+        width: 85%;
+    }
+
+    .restContainer h2, .restContainer h3{
+        float: none;
+        display: block;
+    }
+
+    .restContainer button{
+        float: none;
+        margin-top: 1em;
+    }
+
+    .triContainerBoxes:nth-child(2){
+        border-top: 1px solid hsl(0, 2%, 89%);
+        border-bottom: 1px solid hsl(0, 2%, 89%);
+        border-left: none;
+        border-right: none;
+    }
+
+    nav{
+        top: 82px;
+        right: 5%;
+        left: 5%;
+        z-index: 2;
+        background-color: white;
+        border-radius: 1em;
+        border: 2px solid hsl(0, 1%, 83%); 
+        box-shadow: 0px 16px 50px 23px rgba(0,0,0,0.65);
+        display:none;
+    }
+
+    .nav-visible{
+        display: inline;
+    }
+
+
+    #menu-mobile{
+        display:inline;
+    }
+
+    #menu-mobile:hover{
+        cursor: pointer;
+        color: hsl(176, 72%, 28%);
+    }
+
+    nav li{
+        display: block;
+        background-color: white;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 2em 0;
+    }
+
+    nav li:first-child{
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+    }
+
+    nav li:nth-child(2){
+        border-top:1px solid hsl(0, 1%, 83%);
+        border-bottom:1px solid hsl(0, 1%, 83%);
+    }
+
+
+    nav li:last-of-type{
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
+
+    nav li a{
+        color: black;
+        border:none;
+        font-size: 1.5em;
+    } 
+
+
+    .modalDefaultDiv{
+        padding: 1em;
+        margin:1em 0;
+    }
+
+    .modalDefaultDiv > h1{
+        display: block;
+        padding: 1em 0;
+    }
+
+    .modalDefaultDiv > input{
+        position: relative;
+        top: 6px;
+        left: 0;
+    }
+
+    .modalDefaultDiv > label{
+        margin-left: 1em;
+    }
+
+    .modalDefaultDiv > h2{
+        display: block;
+        float: none;
+    }
+    
+    #modalDefaultContainer{
+        min-width:auto;
+        max-width: auto;
+        width: 95%;
+        padding: 2em 1.5em;
+    }
+
+    .bottomDefaultDiv{
+        flex-direction: column;
+    }
+
+    .bottomDefaultDiv input{
+        margin: 1em 0;
+    }
+
+    .bottomDefaultDiv button{
+        margin: 1em 0;
+    }
+
+
+
+
+
+}
+
+
